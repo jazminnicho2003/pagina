@@ -1,0 +1,120 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #111;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 1px;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+.main-header h1 {
+    margin: 0;
+    border-bottom: 1px solid #ffffffb8;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.catalogo-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.filtros {
+    flex: 1;
+    max-width: 200px;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.filtros h3 {
+    margin-bottom: 10px;
+}
+
+.filtros ul {
+    list-style: none;
+    padding: 0;
+}
+
+.filtros li {
+    margin-bottom: 10px;
+}
+
+.catalogos {
+    flex: 4;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 100% !important;
+}
+.catalogos img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.tarjeta {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.boton-descargar {
+    display: inline-block;
+    background-color: rgb(246, 6, 6);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.boton-descargar:hover {
+    background-color: rgb(235, 88, 88);
+}
+
+.etiquetas {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.nuevo {
+    background-color: #111;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+.mayo{
+    background-color: #eb1515;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 5px;
+}

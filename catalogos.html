@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Catálogos</h1>
+    </header>
+
+    <main class="catalogo-container">
+        <aside class="filtros">
+            <h3>Filtrar</h3>
+            <ul>
+                <li>
+                    <label>
+                        <input type="radio" name="filtro" value="todos" checked> Todos
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="filtro" value="hombre"> Hombres
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="filtro" value="mujer"> Damas
+                    </label>
+                </li>
+            </ul>
+        </aside>
+
+        <section class="catalogos">
+           
+            <div class="tarjeta hombre">
+                <div class="etiquetas">
+                    <span class="mayo">Mayo 2025</span>
+                    <span class="nuevo">Nuevo</span>
+                </div>
+                <h4>Hombres - Zapatillas</h4>
+                <img src="images/1.png" alt="Catálogo Hombres">
+                <a href="pdfs/ZAPATILLAS HOMBRE.pdf" download class="boton-descargar">📥 Descargar</a>
+            </div>
+
+            <div class="tarjeta hombre">
+                <div class="etiquetas">
+                    <span class="mayo">Mayo 2025</span>
+                    <span class="nuevo">Nuevo</span>
+                </div>
+                <h4>Peloteras</h4>
+                <img src="images/3.png" alt="Catálogo Hombres">
+                <a href="pdfs/PELOTERAS.pdf" download class="boton-descargar">📥 Descargar</a>
+            </div>
+
+          
+            <div class="tarjeta mujer">
+                <div class="etiquetas">
+                    <span class="mayo">Mayo 2025</span>
+                    <span class="nuevo">Nuevo</span>
+                </div>
+                <h4>Damas - Nike</h4>
+                <img src="images/2.png" alt="Catálogo Damas">
+                <a href="pdfs/ZAPATILLAS MUJER.pdf" download class="boton-descargar">📥 Descargar</a>
+            </div>
+
+            <div class="tarjeta hombre">
+                <div class="etiquetas">
+                    <span class="mayo">Mayo 2025</span>
+                    <span class="nuevo">Nuevo</span>
+                </div>
+                <h4>Hombres - Polos</h4>
+                <img src="images/cat6.png" alt="Catálogo Hombres">
+                <a href="pdfs/POLOS OVERSIZE (1).pdf" download class="boton-descargar">📥 Descargar</a>
+            </div>
+
+            <div class="tarjeta hombre">
+                <div class="etiquetas">
+                    <span class="mayo">Mayo 2025</span>
+                    <span class="nuevo">Nuevo</span>
+                </div>
+                <h4>Hombres - Poleras</h4>
+                <img src="images/cat5.png" alt="Catálogo Hombres">
+                <a href="pdfs/POLERAS.pdf" download class="boton-descargar">📥 Descargar</a>
+            </div>
+           
+            <div class="tarjeta hombre">
+                <div class="etiquetas">
+                    <span class="mayo">Mayo 2025</span>
+                    <span class="nuevo">Nuevo</span>
+                </div>
+                <h4>Hombres - Chaquetas</h4>
+                <img src="images/cat7.png" alt="Catálogo Hombres">
+                <a href="pdfs/CHAQUETAS.pdf" download class="boton-descargar">📥 Descargar</a>
+            </div>
+
+            <div class="tarjeta hombre">
+                <div class="etiquetas">
+                    <span class="mayo">Mayo 2025</span>
+                    <span class="nuevo">Nuevo</span>
+                </div>
+                <h4>Hombres - Pantalones</h4>
+                <img src="images/cat4.png" alt="Catálogo Hombres">
+                <a href="pdfs/PANTALONES (2).pdf" download class="boton-descargar">📥 Descargar</a>
+            </div>
+
+            <div class="tarjeta hombre">
+                <div class="etiquetas">
+                    <span class="mayo">Mayo 2025</span>
+                    <span class="nuevo">Nuevo</span>
+                </div>
+                <h4>Hombres - Gorras</h4>
+                <img src="images/cat3.png" alt="Catálogo Hombres">
+                <a href="pdfs/GORRAS.pdf" download class="boton-descargar">📥 Descargar</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const filtros = document.querySelectorAll('input[name="filtro"]');
+        const tarjetas = document.querySelectorAll('.tarjeta');
+
+        filtros.forEach(filtro => {
+            filtro.addEventListener('change', () => {
+                const valor = filtro.value;
+
+                tarjetas.forEach(tarjeta => {
+                    if (valor === 'todos') {
+                        tarjeta.style.display = 'block';
+                    } else if (!tarjeta.classList.contains(valor)) {
+                        tarjeta.style.display = 'none';
+                    } else {
+                        tarjeta.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

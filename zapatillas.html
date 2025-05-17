@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zapatillas - Freestyle Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+   body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.barra-superior {
+  background-color: #f04e4e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.contenedor-productos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px;
+}
+
+.producto {
+  background-color: #f7f7f7;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 220px; 
+  margin-bottom: 20px;
+}
+
+.producto img {
+   width: 180px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.producto label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.producto select {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+a.boton-comprar {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px;
+  width: 100%;
+  background-color: #f04e4e;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+a.boton-comprar:hover {
+  background-color: #d93e3e;
+}
+
+  </style>
+</head>
+<body>
+
+    <div class="barra-superior">ZAPATILLAS</div>
+  
+    <div class="contenedor-productos">
+
+      <div class="producto">
+        <img class="producto-img" src="images/Zap1.png" alt="Zapatilla 1">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+            <option value="43">44</option>
+            <option value="43">44.5</option>
+          </select>
+          <label for="precio">S/.389.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+    <div class="producto">
+        <img class="producto-img" src="images/Zap2.png" alt="Zapatilla 2">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+          </select>
+          <label for="precio">S/.389.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img class="producto-img" src="images/Zap3.png" alt="Zapatilla 3">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="44.5">44.5</option>
+          </select>
+          <label for="precio">S/.399.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img class="producto-img" src="images/Zap4.png" alt="Zapatilla 4">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="44.5">44.5</option>
+          </select>
+          <label for="precio">S/.389.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+    <div class="producto">
+        <img class="producto-img" src="images/Zap5.png" alt="Zapatilla 5">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+            <option value="44.5">44.5</option>
+          </select>
+          <label for="precio">S/.279.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img class="producto-img" src="images/Zap6.png" alt="Zapatilla 6">
+    
+        <div class="producto-info">
+         <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="40.5">40.5</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+          </select>
+          <label for="precio">S/.179.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img class="producto-img" src="images/Zap7.png" alt="Zapatilla 7">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+          </select>
+          <label for="precio">S/.549.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+    <div class="producto">
+        <img class="producto-img" src="images/Zap8.png" alt="Zapatilla 8">
+    
+        <div class="producto-info">
+         <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="40.5">40.5</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+          </select>
+          <label for="precio">S/.279.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img class="producto-img" src="images/Zap9.png" alt="Zapatilla 9">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="40.5">40.5</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+          </select>
+          <label for="precio">S/.259.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img class="producto-img" src="images/Zap10.png" alt="Zapatilla 10">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="40.5">40.5</option>
+            <option value="41">41</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+          </select>
+          <label for="precio">S/.269.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+    <div class="producto">
+        <img class="producto-img" src="images/Zap11.png" alt="Zapatilla 11">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="40.5">40.5</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+          </select>
+          <label for="precio">S/.279.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img class="producto-img" src="images/Zap12.png" alt="Zapatilla 12">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="40.5">40.5</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+          </select>
+          <label for="precio">S/.189.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+  
+      <div class="producto">
+        <img class="producto-img" src="images/Zap13.png" alt="Zapatilla 13">
+  
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="40.5">40.5</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+          </select>
+          <label for="precio">S/.209.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+    
+
+      <div class="producto">
+        <img class="producto-img" src="images/Zap14.png" alt="Zapatilla 14">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="40.5">40.5</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+          </select>
+          <label for="precio">S/.209.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+
+      <div class="producto">
+        <img class="producto-img" src="images/Zap15.png" alt="Zapatilla 15">
+    
+        <div class="producto-info">
+         <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="40.5">40.5</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+          </select>
+          <label for="precio">S/.549.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+
+      <div class="producto">
+        <img class="producto-img" src="images/Zap16.png" alt="Zapatilla 16">
+    
+      <div class="producto-info">
+         <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="40.5">40.5</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+          </select>
+          <label for="precio">S/.549.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+
+      <div class="producto">
+        <img class="producto-img" src="images/Zap17.png" alt="Zapatilla 17">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="40.5">40.5</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+          </select>
+          <label for="precio">S/.549.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+
+      <div class="producto">
+        <img class="producto-img" src="images/Zap18.png" alt="Zapatilla 18">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="40.5">40.5</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+          </select>
+          <label for="precio">S/.279.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+
+      <div class="producto">
+        <img class="producto-img" src="images/Zap19.png" alt="Zapatilla 19">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="40.5">40.5</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+          </select>
+          <label for="precio">S/.245.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img class="producto-img" src="images/Zap20.png" alt="Zapatilla 20">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+          </select>
+          <label for="precio">S/.279.00</label>
+  
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img class="producto-img" src="images/Zap21.png" alt="Zapatilla 21">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="40.5">40.5</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+          </select>
+          <label for="precio">S/.189.00</label>
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+
+      <div class="producto">
+        <img class="producto-img" src="images/Zap22.png" alt="Zapatilla 22">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="40.5">40.5</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+          </select>
+          <label for="precio">S/.229.00</label>
+    
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+      <!-- Repite el mismo patrón para los otros productos -->
+      <div class="producto">
+        <img class="producto-img" src="images/Zap23.png" alt="Zapatilla 23">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+          </select>
+          <label for="precio">S/.199.00</label>
+    
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img class="producto-img" src="images/Zap24.png" alt="Zapatilla 23">
+    
+        <div class="producto-info">
+          <label for="talla1">Talla:</label>
+          <select id="talla1" name="talla">
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="40.5">40.5</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="42.5">42.5</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="45">45</option>
+          </select>
+          <label for="precio">S/.289.00</label>
+    
+          <a class="boton-comprar" href="https://wa.me/51913506539?text=Hola,%20estoy%20interesado%20en%20este%20modelo">Comprar</a>
+        </div>
+      </div>

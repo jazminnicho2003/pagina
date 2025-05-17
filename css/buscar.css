@@ -1,0 +1,50 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.buscar {
+    display: flex;
+    align-items: center;
+    width: 240px; /* Puedes ajustar este valor según el diseño */
+    border: 2px solid #000;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.buscar input {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: #000;
+}
+
+.buscar input::placeholder {
+    color: #888;
+    font-size: 13px;
+}
+
+.buscar button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.buscar button:hover {
+    background-color: #333;
+}

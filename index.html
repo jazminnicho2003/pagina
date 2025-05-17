@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freestyle Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/buscar.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   </head>
+<body>
+    <header class="navbar">
+      <div class="logo">FREESTYLE SHOP</div>
+      <form id="formularioBusqueda" class="buscar">
+      <input type="text" id="buscador" placeholder="Buscar productos...">
+      <button type="submit" class="btn-buscar"><i class="fas fa-search"></i></button>
+</form>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="catalogos.html">Catálogos</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <div class="icon" id="cartIcon">🛒</div>
+      <div class="cart-dropdown" id="cartDropdown" style="display: none;">
+      <h3>Carrito</h3>
+      <ul id="cartItems"></ul>
+      <p>Total: $<span id="cartTotal">0.00</span></p>
+      </div>
+    </header>
+    <section class="carrusel">
+      <button class="flecha izquierda">&#10094;</button>
+     
+      <div class="slide activo">
+        <img src="images/1p.jpg" alt="Promo 1">
+      </div>
+      <div class="slide">
+        <img src="images/2p.jpg" alt="Promo 2">
+      </div>
+      <div class="slide">
+        <img src="images/3p.jpg" alt="Promo 3">
+      </div>
+    
+      <button class="flecha derecha">&#10095;</button>
+    </section>
+   
+                  
+<section class="ofert container">
+    <div class="ofert-1">
+      <div class="ofert-img">
+        <img src="images/polos1.jpeg" alt="">
+    </div>
+    <div class="ofert-txt">
+      <h3>POLOS</h3>
+      <a href="polos.html" class="btn-2">Ver mas..</a>
+      </div>
+      </div>
+
+      <div class="ofert-1">
+         <div class="ofert-img">
+           <img src="images/pantalones (1).jpeg" alt="">
+       </div>
+       <div class="ofert-txt">
+         <h3>PANTALONES</h3>
+         <a href="pantalones.html" class="btn-2">Ver mas..</a>
+         </div>
+         </div>
+
+         <div class="ofert-1">
+            <div class="ofert-img">
+              <img src="images/zapas.jpg" alt="">
+          </div>
+          <div class="ofert-txt">
+            <h3>ZAPATILLAS</h3>
+            <a href="zapatillas.html" class="btn-2">Ver mas..</a>
+            </div>
+            </div>
+
+         <div class="ofert-1">
+            <div class="ofert-img">
+              <img src="images/gorras.jpg" alt="">
+          </div>
+          <div class="ofert-txt">
+            <h3>ACCESORIOS</h3>
+            <a href="#" class="btn-2">Ver mas..</a>
+            </div>
+            </div>
+      </section>
+
+      <main class="products container" id="lista-1">
+         <h2>Productos</h2>
+         <div class="product-content">
+          
+            <div class="product">
+               <img src="images/titulo.png" alt="">
+               <div class="product-txt">
+                  <h3>NIKE</h3>
+                  <p>Todas las tallas</p>
+                  <p class="precio">$200</p>
+                  <a href="#" class="btn-2" onclick="agregarAlCarrito('NIKE', 200)">Agregar al carrito</a>
+
+               </div>
+            </div>
+
+            <div class="product">
+               <img src="images/polos2.jpeg" alt="">
+               <div class="product-txt">
+                  <h3>Polo Oversize</h3>
+                  <p>Calidad Premium</p>
+                  <p class="precio">$45</p>
+                  <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+               </div>
+            </div>
+
+            <div class="product">
+               <img src="images/mochila.jpg" alt="">
+               <div class="product-txt">
+                  <h3>Mochila</h3>
+                  <p>Calidad Premium</p>
+                  <p class="precio">$100</p>
+                  <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+               </div>
+            </div>
+
+         </div>
+      </main>
+      
+      <section class="icons container">
+
+         <div class="icon-1">
+            <div class="icon-img">
+               <img src="images/zapa1.png" alt="Para ellos">
+            </div>
+            <div class="icon-txt">
+               <h3>Para ellos..</h3>
+               <a href="zapatillas.html" class="agregar-carrito btn-2" data-id="1">Ver mas</a>
+            </div>
+         </div>
+
+         <div class="icon-1">
+            <div class="icon-img">
+               <img src="images/zapa2.jpeg" alt="Para ellas">
+            </div>
+            <div class="icon-txt">
+               <h3>Para ellas..</h3>
+               <a href="#" class="agregar-carrito btn-2" data-id="1">Ver mas</a>
+            </div>
+         </div>
+
+
+      </section>
+
+      <div class="blog container">
+         <h3>GRACIAS POR LA PREFERENCIA</h3>
+         <div class="blog-1">
+            <img src="images/client1.jpeg" alt="">
+         </div>
+
+         <div class="blog-1">
+            <img src="images/client2.jpeg" alt="">
+         </div>
+
+         <div class="blog-1">
+            <img src="images/client3.jpeg" alt="">
+         </div>
+         <div class="blog-1">
+            <img src="images/client4.jpeg" alt="">
+         </div>
+
+      </div>
+      <section>
+      <h2>Sobre nosotros</h2>
+        <p>En el corazón del norte chico, un pequeño negocio comenzó 
+           con una visión simple pero ambiciosa: ofrecer productos de calidad y servicio al cliente excepcional. Al principio, eran solo unos pocos artículos, una selección modesta de zapatillas y ropa, pero la pasión y dedicación del emprendedor fueron clave para ganar la confianza de la comunidad.
+           Con el tiempo, a medida que el negocio crecía, también lo hacía la variedad de productos. Poco a poco, se sumaron nuevos estilos de ropa, accesorios modernos y las últimas tendencias en calzado, todo pensado para satisfacer las necesidades de los hombres de la región. Los clientes empezaron a notar la diferencia: no solo era un lugar para comprar, sino una experiencia personalizada donde cada persona se sentía atendida y apreciada.
+           El boca a boca hizo su magia, y pronto el negocio comenzó a recibir visitantes de más allá del pueblo, ganándose el cariño y la lealtad de los habitantes del norte chico.
+        </p>
+        <a href="#" class="btn-2">Informacion</a>
+      </section>
+      <footer  class="footer">
+         <div class="footer-content container">
+            <div class="link">
+               <h3>Redes Sociales</h3>
+               <ul>
+                  <li><a href="https://www.instagram.com/freestyleshopperu/?hl=es"><img src="images/r1.svg"></a></li>
+                  <li><a href="freestyleshopperu@hotmail.com"><img src="images/r2.svg"></a></li>
+                  <li><a href="https://www.facebook.com/Freestyleshophuacho"><img src="images/r3.svg"></a></li>
+               </ul>
+            </div>
+
+            <div class="link">
+               <h3>Telefonos</h3>
+               <ul>
+                  <li><a href="#">913506539</a></li>
+                  <li><a>/</a></li>
+                  <li><a href="#">98765432</a></li>
+               </ul>
+            </div>
+
+            <div class="link">
+               <h3>Direccion</h3>
+               <ul>
+                  <li><a href="#">Calle Colon 486</a></li>
+               </ul>
+            </div>
+         </div>
+
+      </footer>
+        
+      <script>
+         // Carrusel básico
+         let slides = document.querySelectorAll('.slide');
+         let index = 0;
+     
+         document.querySelector('.flecha.derecha').addEventListener('click', () => {
+           slides[index].classList.remove('activo');
+           index = (index + 1) % slides.length;
+           slides[index].classList.add('activo');
+         });
+     
+         document.querySelector('.flecha.izquierda').addEventListener('click', () => {
+           slides[index].classList.remove('activo');
+           index = (index - 1 + slides.length) % slides.length;
+           slides[index].classList.add('activo');
+         });
+       </script>
+       <script src="script.js"></script>
+       <script src="carrusel.js"></script>
+
+         <script>
+        // Diccionario de rutas personalizadas
+        const rutas = {
+            "pantalones": "pantalones.html",
+            "polos": "polos.html",
+            "zapatillas": "zapatillas.html",
+            "zapatillas nike": "zapatillas-nike.html",
+            "zapatillas adidas": "zapatillas-adidas.html",
+            "camisas": "camisas.html",
+            "casacas": "casacas.html"
+        };
+
+        // Función que busca el producto
+        function buscarProducto(texto) {
+            console.log("Buscando producto:", texto); // Depuración
+            texto = texto.trim().toLowerCase(); // Normaliza el texto
+
+            // Búsqueda exacta
+            if (rutas[texto]) {
+                console.log("Redirigiendo a:", rutas[texto]); // Depuración
+                window.location.href = rutas[texto];
+                return;
+            }
+
+            // Búsqueda parcial (en caso de que coincidan algunas palabras)
+            for (const clave in rutas) {
+                if (texto.includes(clave)) {
+                    console.log("Redirigiendo a:", rutas[clave]); // Depuración
+                    window.location.href = rutas[clave];
+                    return;
+                }
+            }
+
+            // Si no se encuentra nada
+            console.log("No se encontró nada"); // Depuración
+            alert("No se encontraron resultados para: " + texto);
+        }
+
+        // Captura el evento del formulario
+        document.getElementById("formularioBusqueda").addEventListener("submit", function (e) {
+            e.preventDefault();  // Evita la recarga de la página
+            const texto = document.getElementById("buscador").value; // Obtiene el valor del campo de búsqueda
+            buscarProducto(texto);  // Llama a la función de búsqueda
+        });
+    </script>
+
+     <script src="carrito.js"></script>
+     </body>
+     </html>

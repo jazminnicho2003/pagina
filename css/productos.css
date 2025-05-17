@@ -1,0 +1,63 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #111;
+  }
+  
+  .productos-header {
+    text-align: center;
+    padding: 7px;
+    width: 100%;
+    margin: 0;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 1px;
+  }
+  
+  .productos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    align-items: flex-start;
+  }
+  
+  .producto {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .producto:hover {
+    transform: scale(1.02);
+  }
+  
+  .producto img {
+    width: 105%;
+    height: 250px;
+    object-fit: cover;
+    box-sizing: content-box;
+    border-radius: 8px;
+    display: block;
+  }
+  
+  .boton-comprar {
+    display: inline-block;
+    background-color: #ff3d3d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .boton-comprar:hover {
+    background-color: #e60000;
+  }
+  
