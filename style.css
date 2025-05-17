@@ -435,7 +435,6 @@ th, td{
   .navbar {
     flex-direction: column;
     align-items: center;
-    gap: 8px;
     text-align: center;
     padding: 10px;
   }
@@ -452,25 +451,18 @@ th, td{
     flex-direction: column;
   }
 
-  .slide,
   .slide img {
     width: 100% !important;
     height: auto !important;
     object-fit: cover;
-    object-position: center;
-    display: block;
   }
 
   /* HEADER */
-  .header {
-    flex-direction: column;
-    text-align: center;
-    padding: 30px 20px;
-  }
-
+  .header,
   .header-content {
     flex-direction: column;
-    padding: 0 20px;
+    padding: 20px;
+    text-align: center;
   }
 
   .header-txt h1 {
@@ -482,14 +474,11 @@ th, td{
     height: auto;
   }
 
-  /* PRODUCTOS */
-  .products {
-    padding: 20px 10px;
-  }
 
   .product-content {
     grid-template-columns: 1fr;
     gap: 20px;
+    padding: 0 10px;
   }
 
   .product img {
@@ -497,19 +486,14 @@ th, td{
     height: auto;
   }
 
-  .product button {
-    width: 100%;
-    font-size: 16px;
-  }
-
   /* BLOG */
   .blog {
     flex-direction: column;
+    padding: 20px;
   }
 
   .blog-1 {
     flex-basis: 100%;
-    padding: 10px 0;
   }
 
   /* ICONOS */
@@ -519,18 +503,9 @@ th, td{
   }
 
   .icon-1 {
-    flex-basis: 100%;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
-  .icon-txt h3 {
-    font-size: 18px;
-  }
-
-  .icon-txt p {
-    font-size: 14px;
-  }
-  }
+}
   
