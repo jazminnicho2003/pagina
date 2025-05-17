@@ -47,8 +47,8 @@ img {
 }
 .carrusel {
     position: relative;
-    width: 100vw;
-    height: 100vh; /* altura fija para asegurar la vista completa */
+    width: 100%;
+    height: auto;
     overflow: hidden;
     display: flex;
     align-items: center;  /* CENTRA verticalmente */
@@ -70,9 +70,9 @@ img {
 
 .slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* llena ancho y alto sin deformar */
-    object-position: center center; /* centra la imagen */
+    height: auto;
+    object-fit: cover;
+    object-position: center;
     display: block;
 }
 
@@ -211,7 +211,7 @@ th, td{
     justify-content: space-between;
     align-items: center;
     flex: 1;
-    padding: 0 200px;
+   padding: 0 20px;
 }
 .header-img{
     flex-basis: 50%;
@@ -450,7 +450,7 @@ th, td{
   
     /* CARRUSEL */
     .carrusel {
-      height: auto;
+      height: auto !important;
     }
   
     .slide,
